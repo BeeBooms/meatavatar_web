@@ -1,0 +1,256 @@
+/* style.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+header {
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.line1, .line2, .line3 {
+  width: 25px;
+  height: 3px;
+  background-color: #A25460;
+  margin: 5px;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #ffffff;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .burger {
+    display: flex;
+  }
+}
+
+.hero-section {
+  background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t39.30808-6/321091268_1195740148037299_2486670859410740479_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=783fdb&_nc_ohc=8BS7tMo1YLgAX8HSq1U&_nc_ht=scontent.fbkk5-4.fna&oh=00_AfDIXFmUOMT7nYj6_KKSP1A1aSeitiFOuMbtDRjP3aeNXQ&oe=658C330C');
+  background-size: cover;
+  height: auto;
+  background-position: center;
+  color: #ffffff;
+  text-align: center;
+  padding: 200px 0; /* ปรับขนาดของพื้นที่เท่ากับที่ต้องการ */
+}
+
+.subhero{
+  color: #ffffff;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-content h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+}
+.product-section {
+  background-color: #f4f4f4; /* สีพื้นหลังส่วนนี้เป็นสีเทาอ่อน */
+  padding: 50px 0;
+  text-align: center;
+}
+
+.product{
+  color: rgb(112, 0, 0);
+  font-size: 50px;
+
+}
+
+.follow{
+  color: rgb(141, 24, 24);
+  font-size: 30px;
+
+}
+
+
+
+.journeys-section {
+  background-color: #0e1916; /* สีพื้นหลังส่วนนี้เป็นสีเทาอ่อน */
+  padding: 50px 0;
+  text-align: center;
+}
+
+
+.journeys-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.journeys-column {
+  width: calc(33.33% - 50px); /* ให้คอลัมน์มีขอบระหว่าง */
+  background-color: transparent; /* สีพื้นหลังคอลัมน์เป็นสีขาว */
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.journeys-column h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.journeys-column img {
+  width: 300px;
+  height: 300px;
+}
+
+.journeys-column p {
+  font-size: 1em;
+}
+
+@media (max-width: 768px) {
+  .journeys-column {
+    width: calc(100% - 40px); /* ให้คอลัมน์ลดขนาดเมื่อหน้าจอเล็กขึ้น */
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.buy-section {
+  padding: 50px ;
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 30px;
+  color: #630000;
+}
+
+.buy-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.buy-grid img {
+  width: calc(10% - 20px); /* ให้รูปภาพเต็มหน้าจอและมีขอบระหว่าง */
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .buy-grid img {
+    width: calc(50% - 20px); /* ให้รูปภาพลดลง 2 รูปภาพต่อบรรทัด */
+  }
+}
+
+footer {
+  background-color: #fdfbe3;
+  color: #A25460;
+  padding: 20px;
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-column {
+  width: 100%;
+  max-width: 250px;
+  margin-bottom: 20px;
+}
+
+.footer-column img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.footer-column h4 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+form button {
+  background-color: #A25460;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
